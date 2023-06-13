@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="_03_Battleship.View.MainMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_03_Battleship.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="329.904" d:DesignWidth="406.109">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Assets/Back.png"/>
+    </UserControl.Background>
+    <Grid>
+        <StackPanel MaxWidth="500" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+            <TextBlock FontSize="46" HorizontalAlignment="Center" Margin="0 0 0 30" FontWeight="ExtraBold" Foreground="#FF00A0FA">
+                <TextBlock.Background>
+                    <ImageBrush/>
+                </TextBlock.Background>Морской Бой</TextBlock>
+            <Button Margin="0 0 0 20" Command="{Binding ShowEnterServerIPCommand}" Foreground="#FF00A0FA">Играть</Button>
+            <Button Command="{Binding StartServerModeCommand}" Foreground="#FF00A0FA">Создать сервер</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
